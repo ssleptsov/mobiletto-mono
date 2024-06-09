@@ -1,0 +1,50 @@
+{
+  "name": "mobiletto-common",
+  "version": "2.1.6",
+  "type": "module",
+  "description": "Common constants and functions used by mobiletto and mobiletto storage drivers",
+  "keywords": [
+    "storage",
+    "s3",
+    "b2",
+    "simple",
+    "filesystem",
+    "mobiletto"
+  ],
+  "homepage": "https://github.com/cobbzilla/mobiletto",
+  "author": "Jonathan Cobb <bqppl0m2@duck.com> (https://github.com/cobbzilla)",
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/cobbzilla"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cobbzilla/mobiletto-common.git"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "tsc": "tsc -p tsconfig.json",
+    "lint": "npx eslint src",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "npx prettier src --check",
+    "prettier:fix": "npm run prettier -- --write"
+  },
+  "main": "./lib/esm/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.8",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "consola": "^3.2.3"
+  }
+}

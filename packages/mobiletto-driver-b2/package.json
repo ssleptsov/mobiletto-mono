@@ -1,0 +1,60 @@
+{
+  "name": "mobiletto-driver-b2",
+  "version": "2.0.17",
+  "type": "module",
+  "export": "./lib/esm/index.js",
+  "description": "The Backblaze b2 driver for mobiletto. This package is intended to be used with mobiletto-base, which does not include any drivers",
+  "keywords": [
+    "storage",
+    "b2",
+    "simple",
+    "filesystem",
+    "mobiletto"
+  ],
+  "homepage": "https://github.com/cobbzilla/mobiletto",
+  "author": "Jonathan Cobb <bqppl0m2@duck.com> (https://github.com/cobbzilla)",
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/cobbzilla"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cobbzilla/mobiletto-driver-b2"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "mocha --timeout 30000 ./test/*.spec.js",
+    "tsc": "tsc -p tsconfig.json",
+    "lint": "npx eslint src test",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "npx prettier src test --check",
+    "prettier:fix": "npm run prettier -- --write"
+  },
+  "main": "./lib/esm/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
+  "devDependencies": {
+    "@types/backblaze-b2": "^1.5.2",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "chai": "^4.3.7",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "mobiletto-base": "^2.1.7",
+    "mobiletto-driver-local": "^2.0.18",
+    "mocha": "^10.2.0",
+    "prettier": "^2.8.8",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@gideo-llc/backblaze-b2-upload-any": "^0.1.4",
+    "backblaze-b2": "^1.7.0"
+  }
+}

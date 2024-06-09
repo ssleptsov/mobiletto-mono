@@ -1,0 +1,13 @@
+{
+  "name": "mobiletto-mono",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "npm run tsc --workspaces --if-present",
+    "test": "npm run build && npm run test -w packages/mobiletto-driver-s3"
+  },
+  "workspaces": [
+    "./packages/*",
+    "./utils/*"
+  ]
+}
